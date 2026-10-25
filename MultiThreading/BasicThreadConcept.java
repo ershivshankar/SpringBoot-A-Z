@@ -1,7 +1,7 @@
 package ThreadPackage;
 
 
-    // 1. Creating a thread by implementing Runnable
+    // 1. Creating a thread by implementing Runnable.
     class MyRunnable implements Runnable {
 
         @Override
