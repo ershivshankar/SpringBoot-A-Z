@@ -1,4 +1,4 @@
-package ThreadPackage;
+
 
 
     // 1. Creating a thread by implementing Runnable.
@@ -42,12 +42,18 @@ package ThreadPackage;
             }
         }
     }
+class Test extends Thread{
 
+        public void run(){
+            currentThread().setName("TEST THREAD");
+            System.out.println("Hello from test thread ");
+        }
+}
     public class BasicThreadConcept{
 
         public static void main(String[] args)
                 throws InterruptedException {
-
+/*
             // 3. Current thread methods
             Thread mainThread = Thread.currentThread();
 
@@ -125,7 +131,9 @@ package ThreadPackage;
             // 12. Demonstrate yield()
             Thread.yield();
 
-            System.out.println("Main thread finished");
+            System.out.println("Main thread finished");*/
+            Test t1=new Test();
+            t1.start();
         }
     }
 
