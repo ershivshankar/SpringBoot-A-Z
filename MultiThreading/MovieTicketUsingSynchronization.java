@@ -3,13 +3,19 @@ class MovieTicketBook{
 
    static  int totalticket =7;
 
-    public synchronized void ticketBook(int number){
+    public void ticketBook(int number){
+        System.out.println(" Ticket Booking System Loading .........");
+        System.out.println("TicketBooking System Started");
+        synchronized (this){
+
+
         if(number<=totalticket){
             totalticket=totalticket-number;
             System.out.println("You Have Sucessffully Booked "+number+"Ticket");
         }else{
             System.out.println("Invalid ! Total Ticket Availale only "+totalticket);
-        }
+        }}
+        System.out.println("Ticket Booking System Sucessfully Closed");
 
     }
 
