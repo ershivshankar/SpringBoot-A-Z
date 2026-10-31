@@ -1,13 +1,9 @@
-import java.sql.SQLOutput;
 import java.util.Scanner;
 class MovieTicketBook{
-    /*int number;
-    MovieTickeBook(int number){
-        this.number=number;
-    }*/
+
    static  int totalticket =7;
 
-    public void ticketBook(int number){
+    public synchronized void ticketBook(int number){
         if(number<=totalticket){
             totalticket=totalticket-number;
             System.out.println("You Have Sucessffully Booked "+number+"Ticket");
