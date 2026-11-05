@@ -3,27 +3,76 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Login Page Using Servlet</title>
+    <title>Login and Registration Page</title>
 </head>
 
 <body>
 
     <h3>Welcome To Our Login Page</h3>
 
+    <!-- Login Form -->
     <h2>Login Form</h2>
 
     <form action="login" method="post">
 
         <label>Username:</label>
-        <input type="text" name="username" placeholder="Enter Username" required>
+        <input type="text" name="username"
+               placeholder="Enter Username" required>
         <br><br>
 
         <label>Password:</label>
-        <input type="password" name="password" placeholder="Enter Password" required>
+        <input type="password" name="password"
+               placeholder="Enter Password" required>
         <br><br>
 
         <input type="submit" value="Login">
+        <input type="reset" value="Clear">
 
+    </form>
+
+    <hr>
+
+    <!-- Registration Form -->
+    <h2>Registration Form</h2>
+
+    <form action="register" method="post">
+
+        <label>First Name:</label>
+        <input type="text" name="firstname"
+               placeholder="Enter your First Name" required>
+        <br><br>
+
+        <label>Last Name:</label>
+        <input type="text" name="lastname"
+               placeholder="Enter your Last Name" required>
+        <br><br>
+
+        <label>Email:</label>
+        <input type="email" name="email"
+               placeholder="Enter your Email" required>
+        <br><br>
+
+        <label>Phone Number:</label>
+        <input type="tel" name="phone"
+               placeholder="Enter your Phone Number" required>
+        <br><br>
+
+        <label>Username:</label>
+        <input type="text" name="regusername"
+               placeholder="Create Username" required>
+        <br><br>
+
+        <label>Password:</label>
+        <input type="password" name="regpassword"
+               placeholder="Create Password" required>
+        <br><br>
+
+        <label>Confirm Password:</label>
+        <input type="password" name="confirmpassword"
+               placeholder="Confirm Password" required>
+        <br><br>
+
+        <input type="submit" value="Register">
         <input type="reset" value="Clear">
 
     </form>
