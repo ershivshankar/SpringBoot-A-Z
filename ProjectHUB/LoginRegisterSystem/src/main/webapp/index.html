@@ -3,39 +3,89 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>User Registration</title>
+    <title>Login and Registration</title>
 </head>
-
 <body>
 
-    <h2>User Registration Form</h2>
+    <!-- Login Form -->
+    <div id="loginForm">
+        <h2>User Login</h2>
 
-    <form action="register" method="post">
+        <form action="login" method="post">
 
-        <label>Name:</label>
-        <input type="text" name="Name" placeholder="Enter name" required>
-        <br><br>
+            <label>Username:</label>
+            <input type="text" name="username"
+                   placeholder="Enter username" required>
 
-        <label>Username:</label>
-        <input type="text" name="username" placeholder="Enter username" required>
-        <br><br>
+            <br><br>
 
-        <label>Email:</label>
-        <input type="email" name="Email" placeholder="Enter email" required>
-        <br><br>
+            <label>Password:</label>
+            <input type="password" name="password"
+                   placeholder="Enter password" required>
 
-        <label>Password:</label>
-        <input type="password" name="Password" placeholder="Enter password" required>
-        <br><br>
+            <br><br>
 
-        <button type="submit">Register</button>
+            <button type="submit">Login</button>
+        </form>
 
-    </form>
+        <p>
+            Don't have an account?
+            <a href="#" onclick="showRegister()">Register</a>
+        </p>
+    </div>
 
-    <p>
-        Already have an account?
-        <a href="login.html">Login</a>
-    </p>
+
+    <!-- Registration Form -->
+    <div id="registerForm" style="display: none;">
+        <h2>User Registration</h2>
+
+        <form action="register" method="post">
+
+            <label>Name:</label>
+            <input type="text" name="name"
+                   placeholder="Enter name" required>
+
+            <br><br>
+
+            <label>Username:</label>
+            <input type="text" name="username"
+                   placeholder="Enter username" required>
+
+            <br><br>
+
+            <label>Email:</label>
+            <input type="email" name="email"
+                   placeholder="Enter email" required>
+
+            <br><br>
+
+            <label>Password:</label>
+            <input type="password" name="password"
+                   placeholder="Enter password" required>
+
+            <br><br>
+
+            <button type="submit">Register</button>
+        </form>
+
+        <p>
+            Already have an account?
+            <a href="#" onclick="showLogin()">Login</a>
+        </p>
+    </div>
+
+
+    <script>
+        function showRegister() {
+            document.getElementById("loginForm").style.display = "none";
+            document.getElementById("registerForm").style.display = "block";
+        }
+
+        function showLogin() {
+            document.getElementById("registerForm").style.display = "none";
+            document.getElementById("loginForm").style.display = "block";
+        }
+    </script>
 
 </body>
 </html>
