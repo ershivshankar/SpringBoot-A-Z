@@ -1,0 +1,11 @@
+
+# Maven build output
+target/
+
+# Eclipse files
+.classpath
+.project
+.settings/
+
+# Compiled Java files
+*.class
