@@ -46,20 +46,20 @@ This repository documents my learning journey with practical, hands-on coding.**
 > 📂 `JDBC/src/main/java/org/example/`
 
 ```
-█░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░  10%
-1 / 10 topics committed
+██████████████████░░░░░░░░░░ 70%
+7 / 10 topics committed
 ```
 
 - [x] JDBC Practice Queries — `JDBCpraticequery.java`
-- [ ] JDBC Setup — DriverManager · Connection · Statement
-- [ ] PreparedStatement — Parameterized Queries
-- [ ] CallableStatement — Stored Procedures
-- [ ] ResultSet — Iterating & Mapping to Objects
+- [x] JDBC Setup — DriverManager · Connection · Statement
+- [x] PreparedStatement — Parameterized Queries
+- [x] CallableStatement — Stored Procedures
+- [x] ResultSet — Iterating & Mapping to Objects
 - [ ] Batch Processing
 - [ ] Transaction Management — `commit()` · `rollback()`
 - [ ] Connection Pooling — HikariCP / c3p0
-- [ ] JDBC with MySQL — Full CRUD
-- [ ] DAO Pattern with JDBC
+- [x] JDBC with MySQL — Full CRUD
+- [x] DAO Pattern with JDBC
 
 ---
 
