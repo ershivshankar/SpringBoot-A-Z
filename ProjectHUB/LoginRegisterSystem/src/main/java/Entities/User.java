@@ -16,6 +16,11 @@ public class User {
         this.Email = Email;
         this.Password = Password;
     }
+    public User( String Username, String Password) {
+        
+        this.Username = Username;
+        this.Password = Password;
+    }
 
     public void setUser(String Username) {
         this.Username = Username;
