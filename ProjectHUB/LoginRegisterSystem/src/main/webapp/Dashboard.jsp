@@ -7,7 +7,12 @@
 <title>Welcome To DashBoard</title>
 </head>
 <body>
-<h3> Welcome TO Our DashBoard Page </h3>    
+<h3> Welcome TO Our DashBoard Page </h3>
+<%
+String username =(String )session.getAttribute("name");
+
+%>    
+<%=username %>
 
 </body>
 </html>

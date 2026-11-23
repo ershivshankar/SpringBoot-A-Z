@@ -14,6 +14,7 @@ import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+import jakarta.servlet.http.HttpSession;
 @WebServlet("/login")
 public class Login extends HttpServlet  {
 	@Override
@@ -28,6 +29,10 @@ public class Login extends HttpServlet  {
 		User user =new User(username,password);
 		boolean result=UserDAO.loginMethod(user);
 		if(result) {
+			HttpSession session=req.getSession();
+			session.setAttribute("name", req.getParameter("Username"));
+			
+			
 			resp.sendRedirect("Dashboard.jsp");
 		
 		}else {
